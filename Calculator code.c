@@ -2,7 +2,7 @@
 #include<conio.h>
 #include<math.h>
 #include<stdlib.h>
-#define KEY "\t\tEnter the Operator:"
+#define Digit "\t\tEnter the Operator:"
 
 void Home_page_operation_display();
 void Operator_display();
@@ -15,13 +15,13 @@ void power();
 
 int main()
 {
-    int X=1;
+    int n=1;
     char Operator;
     Home_page_operation_display();
-    while(X)
+    while(n)
     {
         printf("\n");
-        printf("%s ", KEY);
+        printf("%s ", Digit);
         Operator=getche();
         switch(Operator)
         {
@@ -153,12 +153,12 @@ void Home_page_operation_display()
     printf("\t 2. Press for exist  'o'.\n");
     printf("\t 3. Enter 'c' to clear the screen. \n\n");
 
-    printf("Enter '+' Operator for Addition. \n");
-    printf("Enter '-' Operator for Subtraction. \n");
-    printf("Enter '*' Operator for Multiplication. \n");
-    printf("Enter '/' Operator for Division. \n");
-    printf("Enter '?' Operator for Modulus.\n");
-    printf("Enter '^' Operator for Power. \n");
+    printf("\t Enter '+' Operator for Addition. \n");
+    printf("\t Enter '-' Operator for Subtraction. \n");
+    printf("\t Enter '*' Operator for Multiplication. \n");
+    printf("\t Enter '/' Operator for Division. \n");
+    printf("\t Enter '?' Operator for Modulus.\n");
+    printf("\t Enter '^' Operator for Power. \n");
 }
 
 void Operator_display()
